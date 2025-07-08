@@ -1,0 +1,39 @@
+{
+    "name": "rimal/game-theme",
+    "description": "A custom WordPress theme for Rimal Game",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^2.0",
+        "wordpress/wordpress": "^6.0",
+        "advanced-custom-fields/advanced-custom-fields-pro": "^6.0",
+        "elementor/elementor": "^3.0",
+        "wpackagist-plugin/wordpress-seo": "^20.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RimalGame\\": "inc/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "wp"
+    },
+    "minimum-stability": "stable"
+}
