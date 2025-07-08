@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Desert Sunset Gradient -->
+        <linearGradient id="desert-sunset" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff6b6b"/>
+            <stop offset="50%" style="stop-color:#ffd93d"/>
+            <stop offset="100%" style="stop-color:#6c5ce7"/>
+        </linearGradient>
+        
+        <!-- Sand Texture Pattern -->
+        <pattern id="sand-texture" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <rect width="100" height="100" fill="#e17055" opacity="0.1"/>
+            <circle cx="50" cy="50" r="40" fill="#d63031" opacity="0.05"/>
+            <path d="M0,0 L100,100 M0,100 L100,0" stroke="#fab1a0" stroke-width="0.5" opacity="0.1"/>
+        </pattern>
+        
+        <!-- Tribal Pattern -->
+        <pattern id="tribal-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+            <path d="M0,100 L50,50 L100,100 L150,50 L200,100" stroke="#fff" stroke-width="2" fill="none" opacity="0.1"/>
+            <path d="M0,150 L50,100 L100,150 L150,100 L200,150" stroke="#fff" stroke-width="2" fill="none" opacity="0.1"/>
+            <circle cx="100" cy="100" r="30" stroke="#fff" stroke-width="2" fill="none" opacity="0.1"/>
+        </pattern>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="1920" height="1080" fill="url(#desert-sunset)"/>
+    
+    <!-- Sand Texture -->
+    <rect width="1920" height="1080" fill="url(#sand-texture)"/>
+    
+    <!-- Tribal Patterns -->
+    <rect width="1920" height="1080" fill="url(#tribal-pattern)"/>
+    
+    <!-- Decorative Elements -->
+    <g transform="translate(960, 540)" opacity="0.2">
+        <!-- Central Tribal Symbol -->
+        <circle cx="0" cy="0" r="200" stroke="#fff" stroke-width="4" fill="none"/>
+        <path d="M-150,-150 L150,150 M-150,150 L150,-150" stroke="#fff" stroke-width="4" fill="none"/>
+        <circle cx="0" cy="0" r="100" stroke="#fff" stroke-width="4" fill="none"/>
+        
+        <!-- Surrounding Patterns -->
+        <g transform="rotate(0)">
+            <path d="M250,0 L350,0 M300,-50 L300,50" stroke="#fff" stroke-width="4"/>
+        </g>
+        <g transform="rotate(120)">
+            <path d="M250,0 L350,0 M300,-50 L300,50" stroke="#fff" stroke-width="4"/>
+        </g>
+        <g transform="rotate(240)">
+            <path d="M250,0 L350,0 M300,-50 L300,50" stroke="#fff" stroke-width="4"/>
+        </g>
+    </g>
+</svg>
